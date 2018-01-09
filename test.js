@@ -8,10 +8,10 @@ describe('Calculator', () => {
     })
   })
 
-  // // Test template:
-  // describe(<Put a short description of the test here>, () => {
-  //   it(<describe the expected behavior>, function() {
-  //     Put your assertions here
-  //   })
-  // })
+  // Test template:
+  describe('Calculator return 12', () => {
+	it('should return 12', function() {
+		assert.equal(add("12"), 12); 
+	})
+	 })
 });
