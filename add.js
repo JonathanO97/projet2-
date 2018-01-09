@@ -1,12 +1,15 @@
-let add = function(numberStringOne, numberStringTwo) { 
+let add = function(numberString) { 
   
-  if(typeof numberStringOne !== "undefined" && typeof numberStringTwo !== "undefined")
-		return Number(numberStringOne) + Number(numberStringTwo);
+	var str = numberString.split(',');
+	var sum = 0; 
+
+	for(var i = 0; i < str.length; i++){
+		if(str[i].length !== 0){
+			sum += Number(str[i]);
+		}
+	}
 	
-  if(numberStringOne.length === 0) 
-	  return 0; 
-  else
-	  return numberStringOne; 
+	return sum; 
 }
 
 module.exports = add;

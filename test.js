@@ -17,7 +17,7 @@ describe('Calculator', () => {
 
   describe('Calculator return sum of 12 and 11', () => {
 	it('should return 23', function() {
-		assert.equal(add("12", "11"), 23); 
+		assert.equal(add("12,11"), 23); 
 	})
 	 })
 });
